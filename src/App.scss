@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.6;
+  color: #655A56;
+  background: #f8f8f8;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  font-family: sans-serif;;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 15px;
+}
+
+header {
+  background: #eaeeef;
+  padding: 30px 0;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  h2 {
+    font-size: 24px;
+    line-height: 1.6;
+    margin: 0;
+  }
+  img {
+    display: block;
+    float: left;
+    width: 40px;
+    margin-right: 10px;
+  }
+}
+h4{
+  font-weight: normal;
+  span{
+    font-style: italic;
+  }
+}
+.currencyList{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin: 25px 0;
+  &__item{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-right: 15px;
+  }
+  &__name, &__value{
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-width: 100px;
+    margin-bottom: -1px;
+  }
+  &__name{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+  }
+  &__value{
+    font-size: 14px;
+    margin-left: -1px;
+  }
+}
